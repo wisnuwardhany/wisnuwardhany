@@ -11,5 +11,5 @@ function printRelatedLabels_thumbs(current){var splitbarcolor;if(typeof(splitter
 {if((relatedUrls[i]==current)||(!relatedTitles[i]))
 {relatedUrls.splice(i,1);relatedTitles.splice(i,1);thumburl.splice(i,1);i--;}}
 var r=Math.floor((relatedTitles.length- 1)*Math.random());var i=0;if(relatedTitles.length>0)
-document.write('<ul id="related-posts">');while(i<relatedTitles.length&&i<20&&i<maxresults){document.write('<li><a');document.write(' href="'+ relatedUrls[r]+'"><span class="overlay" style="display:none;">'+relatedTitles[r]+'</span><img style="width:90px;height:90px;border:0px;float:center;margin:20px;" src="'+thumburl[r]+'"/></a></li>');i++;if(r<relatedTitles.length- 1){r++;}else{r=0;}}
+document.write('<ul id="related-posts">');while(i<relatedTitles.length&&i<20&&i<maxresults){document.write('<li><a');document.write(' href="'+ relatedUrls[r]+'"><span class="overlay" style="display:none;">'+relatedTitles[r]+'</span><img style="width:120px;height:120px;border:0px;float:center;margin:20px;" src="'+thumburl[r]+'"/></a></li>');i++;if(r<relatedTitles.length- 1){r++;}else{r=0;}}
 document.write('</ul>');relatedUrls.splice(0,relatedUrls.length);thumburl.splice(0,thumburl.length);relatedTitles.splice(0,relatedTitles.length);}
